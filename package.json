@@ -10,8 +10,8 @@
     "major": "dotenv release-it -- major --ci",
     "minor": "dotenv release-it -- minor --ci",
     "patch": "dotenv release-it -- patch --ci",
-    "start": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "start": "node api.js && webpack --mode development --watch",
+    "build": "node api.js && webpack --mode production"
   },
   "dependencies": {
     "lodash": "^4.17.21"
